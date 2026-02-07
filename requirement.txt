@@ -1,0 +1,24 @@
+Part 1: Mandatory Backend API (Node.js + TypeScript)
+(Must be completed for both tracks)
+The API must use Node.js, TypeScript, and an SQL Database (with Prisma/TypeORM) to
+serve data securely.
+1. User Security (Authentication)
+ Implement Login, Registration, and Logout.
+ Use JWT (JSON Web Tokens) for security:
+o Access Token (short-lived) for accessing protected routes.
+o Refresh Token (long-lived) to securely get a new Access Token when the old
+one expires.
+ Hash passwords using bcrypt before storing them.
+o Required Endpoints: /auth/register, /auth/login, /auth/refresh,
+/auth/logout.
+2. Task Management (CRUD)
+ Implement all required operations for tasks. Tasks must belong to the logged-in user.
+ The main task list endpoint (GET /tasks) must include pagination (loading tasks in
+batches), filtering (by status), and searching (by title).
+o Required Endpoints: /tasks (GET/POST), /tasks/:id
+(GET/PATCH/DELETE), /tasks/:id/toggle.
+3. Technical Requirements
+ Use TypeScript throughout.
+ Use an ORM (Object-Relational Mapper) like Prisma or TypeORM.
+ Implement proper validation and clear error handling with standard HTTP status
+codes (e.g., 400, 401, 404) 

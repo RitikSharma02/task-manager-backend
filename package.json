@@ -1,5 +1,5 @@
 {
-  "name": "task-backend",
+  "name": "task-manager-backend",
   "version": "1.0.0",
   "description": "Task Management API",
   "main": "dist/server.js",

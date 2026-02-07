@@ -1,6 +1,6 @@
-# Task Backend API
+# Task Manager Backend
 
-This is a Node.js + TypeScript backend for a Task Management Application.
+This is a Node.js + TypeScript backend for a Task Manager Application.
 
 ## Prerequisites
 

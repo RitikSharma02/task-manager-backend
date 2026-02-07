@@ -36,11 +36,17 @@ This is a Node.js + TypeScript backend for a Task Manager Application.
 
    The server will run on `http://localhost:3000`.
 
- 4. **start the db** 
+4. **Start the DB Studio**
    ```bash
-   npx prisma studio
+   npx prisma studio -p 5556
    ```
-   The db will run on `http://localhost:5555`. 
+   The studio will run on `http://localhost:5556`.
+
+   *(Optional) To update Prisma:*
+   ```bash
+   npm i --save-dev prisma@latest 
+   npm i @prisma/client@latest 
+   ``` 
 
 ## API Endpoints
 
